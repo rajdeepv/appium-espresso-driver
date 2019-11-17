@@ -35,6 +35,7 @@ class GetAttribute : RequestHandler<AppiumParams, String?> {
                 ViewAttributesEnum.CHECKED -> return java.lang.Boolean.toString(viewElement.isChecked)
                 ViewAttributesEnum.CLICKABLE -> return java.lang.Boolean.toString(viewElement.isClickable)
                 ViewAttributesEnum.ENABLED -> return java.lang.Boolean.toString(viewElement.isEnabled)
+                ViewAttributesEnum.ERROR -> return viewElement.error
                 ViewAttributesEnum.FOCUSABLE -> return java.lang.Boolean.toString(viewElement.isFocusable)
                 ViewAttributesEnum.FOCUSED -> return java.lang.Boolean.toString(viewElement.isFocused)
                 ViewAttributesEnum.SCROLLABLE -> return java.lang.Boolean.toString(viewElement.isScrollable)

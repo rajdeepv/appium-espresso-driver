@@ -25,14 +25,14 @@ import android.view.View
 import android.view.View.NO_ID
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import android.widget.Checkable
-import android.widget.NumberPicker
-import android.widget.ProgressBar
-import android.widget.TextView
+import android.widget.*
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import androidx.test.espresso.matcher.ViewMatchers
 
 class ViewElement(private val view: View) {
+    val error: String
+        get() = (view as EditText).error as String
+
     private var activity: Activity? = null
 
     val contentDescription: CharSequence?

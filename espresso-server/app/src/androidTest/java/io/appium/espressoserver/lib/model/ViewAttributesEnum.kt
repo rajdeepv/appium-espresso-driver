@@ -40,6 +40,7 @@ enum class ViewAttributesEnum {
     ADAPTERS,
     ADAPTER_TYPE,
     HINT,
+    ERROR,
     VIEW_TAG;
 
     override fun toString(): String {
