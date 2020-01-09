@@ -69,7 +69,7 @@
     "e2e-test": "gulp transpile && mocha --timeout 600000 --recursive build/test/functional/",
     "watch": "gulp watch",
     "coverage": "gulp coveralls",
-    "prepare": "gulp prepublish && npm run build:server",
+    "prepare": "gulp prepublish && npm run build:node",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "precommit-test": "REPORTER=dot gulp once && npm run test:server",
     "lint": "gulp lint",
